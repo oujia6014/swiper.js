@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="app"></div>
+<script src="swiper.js"></script>
+<script>
+    var box = document.getElementById('app');
+    var imagesAndUrl = [{
+        imgSrc : 'https://eimg.smzdm.com/201808/02/5b626947193086609.png',
+        linkHref : "#"
+    },{
+        imgSrc : 'https://eimg.smzdm.com/201808/02/5b626a11a685c5086.png',
+        linkHref : '1'
+    },{
+        imgSrc : 'https://eimg.smzdm.com/201808/02/5b6269d9e92258576.png',
+        linkHref : '#'
+    }];
+    var broadcast = new Swiper(box,imagesAndUrl,{
+        transitionTime : 300, // 动画过渡时间
+        intervalTime : 8000 // 图片切换时间
+    });
+</script>
+</body>
+</html>

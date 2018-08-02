@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*设置控件位置及大小*/
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50%;
+}
+/*设置list定位*/
+.swiper .swiper-list {
+    position: relative;
+}
+
+/*设置item浮动*/
+.swiper .swiper-list .swiper-item {
+    float: left;
+}
+
+/*设置图片宽度*/
+.swiper .swiper-list .swiper-item img {
+    width: 100%;
+}
+
+/*设置圆点位置*/
+.swiper .swiper-tool {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+/*设置圆点形状*/
+.swiper .swiper-tool .swiper-spot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #ccc;
+    display: inline-block;
+    margin: 0.2rem;
+    opacity: 0.6;
+    transition: background .6s;
+}
+
+/*设置圆点鼠标经过改变颜色*/
+.swiper .swiper-tool .swiper-spot:hover {
+    background: #ff6700;
+    cursor: pointer;
+}
+
+/*设置圆点激活颜色*/
+.swiper .swiper-tool .swiper-spot-active {
+    background: #ff6700;
+}
+
+
+
+
+.swiper .swiper-btn {
+    width: 3rem;
+    height: 6rem;
+    background: transparent;
+    opacity: .6;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 6rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -3rem;
+    transition: background .6s;
+}
+
+.swiper .swiper-btn:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+.swiper .swiper-btn-left {
+    left: -1px;
+}
+
+.swiper .swiper-btn-right {
+    right: -1px;
+}
+
+/* 响应式：width <= 768px */
+@media screen and (max-width:768px) {
+    .broadcastMe .broadcastMe-btn {
+        display: none;
+    }
+}
