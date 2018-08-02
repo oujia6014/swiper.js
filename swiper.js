@@ -3,7 +3,7 @@
  */
 function Swiper(event, imgUrl, option) {
     if (event === null || imgUrl === null) {
-        console.error('请传入节点');
+        console.error('请传入ID元素');
         return;
     }
     this.event = event;
@@ -164,7 +164,6 @@ Swiper.prototype.render = function () {
     this.swiperList.style.left = (-1) * this.event.clientWidth * this.index + 'px';
     this.swiperList.style.transition = 'left ' + this.timer / 1000 + 's';
     setTimeout(() => {
-        // 添加判断，防止出界
         if (this.index <= 0) {
             this.swiperList.style.transitionProperty = 'none';
             this.index = this.imgUrl.length;

@@ -59,9 +59,7 @@
     background: #ff6700;
 }
 
-
-
-
+/*设置按钮样式*/
 .swiper .swiper-btn {
     width: 3rem;
     height: 6rem;
@@ -78,6 +76,7 @@
     transition: background .6s;
 }
 
+/*设置按钮点击样式*/
 .swiper .swiper-btn:hover {
     background: #000;
     cursor: pointer;
